@@ -3,11 +3,19 @@
 
 <head>
     <title>Madlib</title>
+    <link rel="stylesheet" href="/static/madlibs.css">
 </head>
 
 <body>
     There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab.
-    When {{ person }} went to pick it up, it burst into flames in a totally
+    When
+    <ul>
+        {% for feeling in feelings %}
+        <li> {{feeling}}</li>
+        {% endfor %}
+    </ul>
+
+    {{ person }} went to pick it up, it burst into flames in a totally
     {{ adjective }} way.
 
 
