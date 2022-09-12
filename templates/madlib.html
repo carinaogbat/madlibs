@@ -1,12 +1,12 @@
-<!doctype html>
-<html>
-
+<!-- <!doctype html>
+<html> -->
+{% extends 'base.html' %}
 <head>
-    <title>Madlib</title>
-    <link rel="stylesheet" href="/static/madlibs.css">
+    {% block title %}Madlib{% endblock%}
+    <!-- <link rel="stylesheet" href="/static/madlibs.css"> -->
 </head>
-
-<body>
+{% block content %}
+<!-- <body> -->
     There once was a {{ color }} {{ noun }} sitting in the Hackbright Lab.
     When
     <ul>
@@ -19,6 +19,6 @@
     {{ adjective }} way.
 
 
-</body>
-
-</html>
+<!-- </body> -->
+{% endblock %}
+<!-- </html> -->
